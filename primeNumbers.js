@@ -1,5 +1,7 @@
 // 1'e ve kendisine bölünecek, 1 den büyük pozitif tamsayı olacak
 
+const arguments = process.argv.slice(2);
+
 function showPrimeNumbers(lowNumber, highNumber){
     for (let i =lowNumber; i <= highNumber; i++ ){
         let isPrime = true;
@@ -15,4 +17,5 @@ function showPrimeNumbers(lowNumber, highNumber){
     }
 }
 
-showPrimeNumbers(7,22)
+showPrimeNumbers(arguments[0] *1,arguments[1]* 1);
+//console.log(process.argv.slice(2));
