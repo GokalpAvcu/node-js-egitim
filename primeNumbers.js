@@ -8,5 +8,11 @@ function showPrimeNumbers(lowNumber, highNumber){
                 isPrime = false
             }
         }
+
+        if(isPrime){
+            console.log(i);
+        }
     }
 }
+
+showPrimeNumbers(7,22)
